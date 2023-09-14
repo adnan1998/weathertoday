@@ -28,6 +28,17 @@ body {
     height: 40vmin;
     pointer-events: none;
 }
+.weather::before {
+    backdrop-filter: blur(6px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    border-radius: 16px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
